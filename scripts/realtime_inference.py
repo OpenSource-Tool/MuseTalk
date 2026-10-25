@@ -265,7 +265,8 @@ class Avatar:
 
         gen = datagen(whisper_chunks,
                      self.input_latent_list_cycle,
-                     self.batch_size)
+                     self.batch_size,
+                     device=device)
         start_time = time.time()
         res_frame_list = []
 
